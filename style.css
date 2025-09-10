@@ -16,9 +16,11 @@ footer p {
     font: 0.6rem;
     margin-top: 0.5rem;
 }
+
 #container {
     display: flex;
 }
+
 .cartao {
     margin: 1rem 1rem;
     background-color: hwb(320 57% 3%);
