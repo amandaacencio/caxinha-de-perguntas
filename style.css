@@ -1,9 +1,9 @@
 body {
-    background-color: hwb(320 57% 3%) font-family: "Montserrat", sans-serif;
+    background-color: hsl(327, 77%, 76%) font-family: "Montserrat", sans-serif;
 }
 
 footer {
-    background-color: rgba(255, 248, 248, 0.856);
+    background-color: rgba(241, 133, 133, 0.856);
     color: rgb(0, 0, 0);
     position: fixed;
     bottom: 0;
@@ -16,10 +16,12 @@ footer p {
     font: 0.6rem;
     margin-top: 0.5rem;
 }
-
+#container {
+    display: flex;
+}
 .cartao {
     margin: 1rem 1rem;
-    background-color: lch(60.16% 56.53 340.13);
+    background-color: hwb(320 57% 3%);
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6rem);
@@ -27,7 +29,7 @@ footer p {
 
 .cartao_conteudo {
     text-align: center;
-    background-color: hwb(320 57% 3%) height: 100%;
+    background-color: hwb(321 58% 5%) height: 100%;
 }
 
 .cartao_conteudo h3 {
@@ -38,5 +40,5 @@ footer p {
     position: absolute;
     margin: 0.6rem;
     border-radius: 0.6rem;
-    font-size: 1vw;
+    font-size: 2vw;
 }
