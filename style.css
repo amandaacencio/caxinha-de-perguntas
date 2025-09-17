@@ -32,13 +32,13 @@ footer p {
 
 .cartao_conteudo {
     text-align: center;
-    background-color: hwb(321 58% 5%)
-    height 100%;
+    background-color:var(--card-front-color);
+    height:100%
 }
 
 .cartao_conteudo h3 {
-    background-color: rgb(39, 8, 8);
-    color: aliceblue;
+    color: var(--card-front-color);
+    border: 1px solid var(--text-color);
     text-align: left;
     padding: 0.5;
     position: absolute;
