@@ -24,7 +24,7 @@ footer p {
 
 .cartao {
     margin: 1rem 1rem;
-    background-color: aqua;
+    background-color: rgb(32, 39, 39);
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6rem);
@@ -52,8 +52,8 @@ footer p {
 
 :root {
     --text-color: #DBE4EF;
-    --card-front-color: #144480;
-    --card-back-color: #00F4BF;
+    --card-front-color: hwb(327 58% 5%);
+    --card-back-color: #ffffff;
 }
 
 .cartao_conteudo_pergunta p {
