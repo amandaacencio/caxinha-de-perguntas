@@ -1,8 +1,13 @@
 function criarCartao(categoria, pergunta, resposta) {
     let container = document.getElementById("container")
     let cartao = document.createElement('article')
+    let respostaEstaVisivel = false
+    function viraCartao(){
+        respostaEstaVisivel =!respostaEstaVisivel
+    }
+    let respostaEstaVisivel = true
     cartao.className = 'cartao'
-    cartao.innerHTML =
+    cartao.innerHTML = `
     <div class="cartao_conteudo">
                     <h3>country life</h3>
                     <div class="cartao_conteudo_pergunta">
@@ -16,4 +21,9 @@ function criarCartao(categoria, pergunta, resposta) {
                             produtividade da lavoura.</p>
                     </div>
                 </div>
+                `
+                 container.appendChild(cartao)
+
+
+    respostaEstaVisivel = !respostaEstaVisivel
 }
