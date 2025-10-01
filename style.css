@@ -89,7 +89,7 @@ footer p {
 
 .cartao_conteudo_resposta {
     transforme: rotateY(180deg);
-    background-color: aquamarine;
+    background-color: hwb(327 58% 5%);
     border: 4px solid var(--card-back-color);
 }
 
