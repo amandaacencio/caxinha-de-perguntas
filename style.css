@@ -30,14 +30,14 @@ footer p {
     margin: 1rem 1rem;
     background-color: rgb(32, 39, 39);
     height: 20rem;
-    flex-grow: 1;
+    flex-grow: 1 0 calc(100% - 1rem);
     flex-basis: calc(33% - 6rem);
 }
 
 .cartao_conteudo {
     text-align: center;
-    background-color:var(--card-front-color);
-    height:100%;
+    background-color: var(--card-front-color);
+    height: 100%;
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
 }
@@ -50,7 +50,7 @@ footer p {
     position: absolute;
     margin: 0.6rem;
     border-radius: 0.6rem;
-    font-size: 2vw;
+    font-size: 3vw;
     backface-visibility: hidden;
 }
 
@@ -66,24 +66,42 @@ footer p {
 }
 
 .cartao_conteudo_resposta p {
-    color:var(--card-back-color);
+    color: var(--card-back-color);
     font-weight: 700;
 }
+
 .cartao:hover .cartao_conteudo {
     transform: rotateY(180deg);
 }
 
-.cartao_conteudo_pergunta, .cartao_conteudo_resposta {
+.cartao_conteudo_pergunta,
+.cartao_conteudo_resposta {
     backface-visibility: hidden;
     position: absolute;
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
 }
-.cartao_conteudo_pergunta{
+
+.cartao_conteudo_pergunta {
     transform: rotateY(180deg);
 }
+
+.cartao_conteudo_resposta {
+    transforme: rotateY(180deg);
+    background-color: aquamarine;
+    border: 4px solid var(--card-back-color);
+}
+
 .cartao_conteudo p {
     margin: 1rem;
     padding: 2rem;
     margin-top: 4rem;
+    font-size: 3.8vw;
+}
+
+@media (max-width: 560px) {
+    body {
+        background: url('img/bg-mobile.webp');
+    }
 }
