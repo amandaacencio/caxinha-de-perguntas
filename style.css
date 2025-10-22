@@ -55,7 +55,7 @@ footer p {
 
 :root {
     --text-color: #DBE4EF;
-    --card-front-color: hwb(327 58% 5%);
+    --card-front-color: hwb(220 85% 9%);
     --card-back-color: #ffffff;
 }
 
@@ -88,7 +88,7 @@ footer p {
 
 .cartao_conteudo_resposta {
     transform: rotateY(180deg);
-    background-color: hwb(327 58% 5%);
+    background-color: hwb(240 98% 1%);
     border: 4px solid var(--card-back-color);
 }
 
