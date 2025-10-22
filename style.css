@@ -27,11 +27,16 @@ footer p {
 }
 
 .cartao {
-    margin: 1rem 1rem;
-    background-color: rgb(32, 39, 39);
-    height: 20rem;
-    flex-grow: 1 0 calc(100% - 1rem);
-    flex-basis: calc(33% - 6rem);
+     display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #000;
+  font-size: 48px;
+  min-width: 100px; 
+  min-height: 100px;  
+  text-align: center;
+  word-wrap: break-word;
 }
 
 .cartao_conteudo {
