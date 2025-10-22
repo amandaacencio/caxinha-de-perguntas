@@ -1,10 +1,10 @@
 body {
-    background: url("img/bg-desktop.webp");
+    background: url("COLHEITA-SOJA-2-WEB.jpg");
     font-family: "Montserrat", sans-serif;
 }
 
 footer {
-    background-color: hwb(327 58% 5%);
+    background-color: hwb(192 67% 6%);
     color: rgb(0, 0, 0);
     position: fixed;
     bottom: 0;
@@ -14,8 +14,8 @@ footer {
 
 footer p {
     text-align: center;
-    font: 0.6rem;
-    margin-top: 0.5rem;
+    font: 0.3rem;
+    margin-top: 0.3rem;
 }
 
 #container {
@@ -62,12 +62,12 @@ footer p {
 
 .cartao_conteudo_pergunta p {
     color: var(--text-color);
-    font-weight: 500;
+    font-weight: 250;
 }
 
 .cartao_conteudo_resposta p {
     color: var(--card-back-color);
-    font-weight: 700;
+    font-weight: 100;
 }
 
 .cartao:hover .cartao_conteudo {
@@ -88,7 +88,7 @@ footer p {
 }
 
 .cartao_conteudo_resposta {
-    transforme: rotateY(180deg);
+    transform: rotateY(180deg);
     background-color: hwb(327 58% 5%);
     border: 4px solid var(--card-back-color);
 }
