@@ -90,27 +90,22 @@ footer p {
     align-items: center;
 }
 
-.cartao_conteudo_resposta{
-transform: rotateY(180deg);
-background-color: rgb(255, 0, 212);
-border: 4px solid var(--card-back-color);
-parei aqui
-
-.cartao_conteudo_pergunta { 
-    transform: rotateY(180deg);
-}
-
 .cartao_conteudo_resposta {
     transform: rotateY(180deg);
-    background-color: hwb(240 36% 26%);
+    background-color: rgb(255, 0, 212);
     border: 4px solid var(--card-back-color);
+    text-align: center;
+}
+
+.cartao_conteudo_pergunta {
+    transform: rotateY(180deg);
 }
 
 .cartao_conteudo p {
     margin: 1rem;
     padding: 2rem;
     margin-top: 4rem;
-    font-size: 3.8vw;
+    font-size: 2.8vw;
 }
 
 @media (max-width: 560px) {
