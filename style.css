@@ -14,8 +14,8 @@ footer {
 
 footer p {
     text-align: center;
-    font: 0.3rem;
-    margin-top: 0.3rem;
+    font: 0.6rem;
+    margin-top: 0.5rem;
 }
 
 #container {
@@ -29,23 +29,24 @@ footer p {
 .cartao {
     margin: 1rem 1rem;
     background-color: rgb(112, 194, 241);
-    display: inline-flex;
-    justify-content: center;
+    height: 75rem;
+    flex-grow: 1 0 calc(100% - 1rem);
+    flex-basis: calc(33% - 0.6rem);
 }
 
 .cartao_conteudo {
     text-align: center;
-    background-color: var(--card-front-color);
+    background-color: rgb(190, 100, 100);
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
 }
 
 .cartao_conteudo h3 {
-    color: var(--card-front-color);
+    color: rgb(112, 241, 235);
     border: 1px solid var(--text-color);
     text-align: left;
-    padding: 0.5;
+    padding: 0.5rem;
     position: absolute;
     margin: 0.6rem;
     border-radius: 0.6rem;
@@ -61,34 +62,47 @@ footer p {
 
 .cartao_conteudo_pergunta p {
     color: var(--text-color);
-    font-weight: 250;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
 }
 
 .cartao_conteudo_resposta p {
     color: var(--card-back-color);
-    font-weight: 100;
+    font-weight: 700;
+    margin-top: 4rem;
+    font-size: 2.8vw;
+    text-align: center;
+    align-items: center;
 }
 
 .cartao:hover .cartao_conteudo {
     transform: rotateY(180deg);
 }
 
-.cartao_conteudo_pergunta,
-.cartao_conteudo_resposta {
+.cartao_conteudo_pergunta, .cartao_conteudo_resposta {
     backface-visibility: hidden;
     position: absolute;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
+    text-align: center;
+    align-items: center;
 }
 
-.cartao_conteudo_pergunta {
+.cartao_conteudo_resposta{
+transform: rotateY(180deg);
+background-color: rgb(255, 0, 212);
+border: 4px solid var(--card-back-color);
+parei aqui
+
+.cartao_conteudo_pergunta { 
     transform: rotateY(180deg);
 }
 
 .cartao_conteudo_resposta {
     transform: rotateY(180deg);
-    background-color: hwb(240 98% 1%);
+    background-color: hwb(240 36% 26%);
     border: 4px solid var(--card-back-color);
 }
 
